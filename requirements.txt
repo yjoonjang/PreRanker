@@ -1,0 +1,4 @@
+datasets
+pip install git+https://github.com/yjoonjang/mteb.git@toolret#egg=mteb
+transformers==4.42.4
+einops # for NV-Embed
