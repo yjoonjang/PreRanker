@@ -1,11 +1,11 @@
-<h1 align="center">Preranker: reranking tools beforehand</h1> 
+<h1 align="center">Pre:Ranker: reranking tools beforehand</h1> 
 
 ## News
 - 2025.04.09: [🤗 preranker-v1](https://huggingface.co/yjoonjang/preranker-v1), [MTEB-ToolRetrieval](https://github.com/yjoonjang/preranker?tab=readme-ov-file#MTEB-ToolRet) released!
 
-## About Preranker
-So many tools and functions to use? Try **Preranker** ! <br>
-**Preranker** is designed to optimize the function calling process of modern LLMs by narrowing down the corpus of available tools based on a given query.
+## About Pre:Ranker
+So many tools and functions to use? Try **Pre:Ranker** ! <br>
+**Pre:Ranker** is designed to optimize the function calling process of modern LLMs by narrowing down the corpus of available tools based on a given query.
 
 ## Installation
 ```bash
@@ -65,7 +65,7 @@ python run_mteb.py
 
 ## Citation
 ```bibtex
-@misc{Preranker,
+@misc{Pre:Ranker,
   publisher = {Youngjoon Jang, Seongtae Hong},
   year = {2025},
   url = {https://github.com/yjoonjang/preranker}
