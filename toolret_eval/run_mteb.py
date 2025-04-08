@@ -1,17 +1,16 @@
 from mteb import MTEB
 import mteb
 from sentence_transformers import CrossEncoder, SentenceTransformer
-from mxbai_rerank import MxbaiRerankV2
+
 import torch
 
 dual_encoder = SentenceTransformer("nvidia/NV-Embed-v2", trust_remote_code=True, model_kwargs={"torch_dtype": torch.bfloat16})
 
 tasks = mteb.get_tasks(tasks=["ToolRetrieval"], languages=["eng"])
 eval_splits = ["dev"]
-
 evaluation = MTEB(tasks=tasks)
 
-# evalution for first stage retrieval
+# Use NV-Embed-v2 for first stage retrieval
 evaluation.run(
     dual_encoder,
     eval_splits=eval_splits,
@@ -20,9 +19,7 @@ evaluation.run(
     batch_size=1
 )
 
-
-# evaluation for second stage retrieval
-
+# use reranker for second stage reranking
 # cross_encoder_model_name = "BAAI/bge-reranker-v2-m3"
 # cross_encoder_model_name = "jinaai/jina-reranker-v2-base-multilingual"
 # cross_encoder_model_name = "Alibaba-NLP/gte-reranker-modernbert-base"

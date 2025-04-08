@@ -1,4 +1,5 @@
-datasets
-./mteb 
-transformers==4.42.4
+sentence-transformers
+./mteb # for MTEB-ToolRetrieval
+transformers==4.42.4 # for NV-Embed
 einops # for NV-Embed
+flash_attn==2.7.4 # for ModernBERT, jina
