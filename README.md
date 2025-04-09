@@ -1,4 +1,4 @@
-<h1 align="center">Pre:Ranker: reranking tools beforehand</h1> 
+<h1 align="center">📊 Pre:Ranker - reranking tools beforehand</h1> 
 
 ## News
 - 2025.04.09: [🤗 preranker-v1](https://huggingface.co/yjoonjang/preranker-v1), [MTEB-ToolRetrieval](https://github.com/yjoonjang/preranker?tab=readme-ov-file#MTEB-ToolRet) released!
