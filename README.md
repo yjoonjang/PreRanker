@@ -32,7 +32,9 @@ print(scores) # [0.91427845 0.7625548  0.7656321]
 
 
 ## MTEB-ToolRet
-Changed [ToolRet Benchmark](https://github.com/mangopy/tool-retrieval-benchmark) into BEIR format to make it MTEB compatible. check `make_toolret_to_beir_format.ipynb` for more details.
+Changed [ToolRet Benchmark](https://github.com/mangopy/tool-retrieval-benchmark) into BEIR format to make it MTEB compatible. <br> 
+For evaluating rerankers, [NV-Embed-v2](https://huggingface.co/nvidia/NV-Embed-v2) is used for first-stage retrieval. <br>
+Check `make_toolret_to_beir_format.ipynb` and `run_mteb.py` for more details!
 
 ### Evaluation Code
 ```bash
