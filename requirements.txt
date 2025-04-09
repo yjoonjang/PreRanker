@@ -1,5 +1,5 @@
 sentence-transformers
-./mteb # for MTEB-ToolRetrieval
+git+https://github.com/yjoonjang/mteb.git@toolret#egg=mteb # for MTEB-ToolRetrieval
 transformers==4.42.4 # for NV-Embed
 einops # for NV-Embed
 flash_attn==2.7.4 # for ModernBERT, jina
